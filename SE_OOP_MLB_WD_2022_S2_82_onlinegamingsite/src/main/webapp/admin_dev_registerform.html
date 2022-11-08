@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/bootstrap.css"></link>
+	<style>
+		#form{
+			width:500px;
+			margin:auto;
+			margin-top:50px;
+		}
+	</style>
+	
+</head>
+<body class="container-fluid">
+
+	<form action="devregister" method="post" class="form card" id="form">
+		<h2 class="bg-primary text-white card-header">Developer Registration Form</h2>
+		
+		<table class="table table-hover">
+		
+			<tr>
+			<td>Name</td>
+			<td><input type="text" name="devName" required></td>
+			</tr>
+			
+			<tr>
+			<td>Email</td> 
+			<td><input type="email" name="devEmail" required></td>
+			</tr>
+			
+			<tr>
+			<td>Contact_No</td>
+			<td><input type="text" name="devContactNo" required></td>
+			</tr>
+			
+			<tr>
+			<td>Category</td>
+			
+			<td><select name="devCategory">
+				<option value="Own Category">--Own or select--</option>
+				<option value="Strategy Game Developer">Strategy Game Developer</option>
+				<option value="Action Game Developer">Action Game Developer</option>
+				<option value="Racing Game Developer">Racing Game Developer</option>
+				<option value="Board Game Developer">Board Game Developer</option>
+				<option value="Open World Game Developer">Open World Game Developer</option>
+				</select>
+			</td>
+			</tr>
+			
+			<tr>
+			<td>Password</td>
+			<td><input type="password" name="devPassword" required></td>
+			</tr>
+			
+			<tr class="card-footer">
+			<td><button type="submit" class="btn btn-outline-success">Register</button></td>
+			<td><button type="reset" class="btn btn-outline-danger">Cancel</button></td>
+			</tr>
+		
+		</table>
+		
+		<button class="btn btn-outline-success display-block"><a href="showdevlist">View Developer Details</a></button>
+	
+	</form>
+	
+	
+
+</body>
+</html>
